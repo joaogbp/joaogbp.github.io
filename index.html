@@ -4,316 +4,449 @@
     <title>João Gabriel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-
+    <link rel="stylesheet" type="text/css" href="estilo.css">
     <!-- CDN (Content Delivery Network) -->
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <!-- My sources -->
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-    <link rel="stylesheet" type="text/css" href="timeline.css">
-    <script src="navBar.js"></script>
   </head>
+  <body>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top myNavbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- <a class="navbar-brand" href="#">João Gabriel</a> -->
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="parallax"></div>
 
-          <ul class="nav navbar-nav">
-            <li><a href="#home" href="#">Home</a></li>
-            <!-- <li class="active"><a href="#home" href="#">Home</a></li> -->
-            <li><a href="#skills" href="#"><span class="glyphicon glyphicon-list-alt"></span> Habilidades</a></li>
-            <li><a href="#portfolio" href="#"><span class="glyphicon glyphicon-th"></span> Portfólio</a></li>
-            <li><a href="#about" href="#"><span class="glyphicon glyphicon-user"></span> Sobre</a></li>
-            <li><a href="#timeline" href="#"><span class="glyphicon glyphicon-list"></span> Timeline</a></li>
+    <div class="container">
+      <h1>Lighter, Secondary Text</h1>
+      <p>The small element is used to create a lighter, secondary text in any heading:</p>
+      <p>Use the mark element to <mark>highlight</mark> text.</p>
+      <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+      <blockquote>
+        <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+        <footer>From WWF's website</footer>
+      </blockquote>
+      <blockquote class="blockquote-reverse">
+        <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+        <footer>From WWF's website</footer>
+      </blockquote>
+      <p>The dl element indicates a description list:</p>
+      <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl>
+      <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
+      <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+      <pre>
+        Text in a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+        both      spaces and
+        line breaks.
+      </pre>
+
+      <p>Use the contextual classes to provide "meaning through colors":</p>
+      <p class="text-muted">This text is muted.</p>
+      <p class="text-primary">This text is important.</p>
+      <p class="text-success">This text indicates success.</p>
+      <p class="text-info">This text represents some information.</p>
+      <p class="text-warning">This text represents a warning.</p>
+      <p class="text-danger">This text represents danger.</p>
+
+      <h2>Contextual Backgrounds</h2>
+      <p>Use the contextual background classes to provide "meaning through colors":</p>
+      <p class="bg-primary">This text is important.</p>
+      <p class="bg-success">This text indicates success.</p>
+      <p class="bg-info">This text represents some information.</p>
+      <p class="bg-warning">This text represents a warning.</p>
+      <p class="bg-danger">This text represents danger.</p>
+
+      <p class="lead">This paragraph stands out.</p>
+      <p class="small">This paragraph is smaller.</p>
+
+      <p class="text-left">Left-aligned text.</p>
+      <p class="text-right">Right-aligned text.</p>
+      <p class="text-center">Center-aligned text.</p>
+      <p class="text-justify">Justified text. Justified text. Justified text. Justified text. Justified text. Justified text.</p>
+      <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+      <p><strong>Tip:</strong> Try to resize the browser window to see the behaviour of justify and nowrap.</p>
+
+      <h2>Typography</h2>
+      <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. (normal abbr)</p>
+      <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr> was founded in 1948. (slightly smaller abbr)</p>
+
+      <p>The class .list-unstyled removes the default list-style and left margin on list items (immediate children only):</p>
+      <ul class="list-unstyled">
+        <li>Coffee</li>
+        <li>Tea
+          <ul>
+            <li>Black tea</li>
+            <li>Green tea</li>
           </ul>
+        </li>
+        <li>Milk</li>
+      </ul>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#contact"><span class="glyphicon glyphicon-envelope"></span> Contato</a></li>
-          </ul>
+      <p>The class .list-inline places all list items on a single line:</p>
+      <ul class="list-inline">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
 
-        </div>
-      </div>
-    </nav>
+      <p>Use the .dl-horizontal class line up the description list side-by-side when the browser window expands:</p>
+      <dl class="dl-horizontal">
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl>
+      <p><strong>Tip:</strong> Try to resize the browser window to see the behaviour of the description list.</p>
 
-    <!-- First Parallax Image with Logo Text -->
-    <div id="home" class="parallax vertical-center">
-      <p class="estilo">João Gabriel</p>
-    </div>
-    <!-- <div class="parallax align-items-center w3-display-container w3-opacity-min" id="home">
-      <div class="w3-display-middle" style="white-space:nowrap;">
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">João Gabriel
-          <span class="w3-hide-small">Borelli Padilha</span> </span>
-      </div>
-    </div> -->
+      <p>If you add the .pre-scrollable class, the pre element gets a max-height of 350px and provides a y-axis scrollbar:</p>
+      <pre class="pre-scrollable">Text in a pre element
+      is displayed in a fixed-width
+      font, and it preserves
+      both      spaces and
+      line breaks.</pre>
 
-    <div id="skills" class="container-fluid" style="background-color:lightgray;">
-      <br><br><br>
-      <div class="container-fluid">
-        <h2>Habilidades</h2>
-        <!-- <p>Xxx yyy zzz.</p> -->
-        <div class="row">
-          <div class="col-md-4">
-            <div class="thumbnail opa" >
-              <a href="skills/Group 4.png" target="_blank">
-                <img src="skills/Group 4.png" alt="Node JS" style="width:50%" class="img-circle">
-                <div class="caption fonte">
-                  <p>Experiencia com desenvolvimento de aplicativos e jogos para iOS. Fui treinado pela 'Apple Developer Academy' para desenvolver aplicativos que funcionem de acordo com as guidelines da Apple.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail opa">
-              <a href="skills/Group 2.png" target="_blank">
-                <img src="skills/Group 2.png" alt="Swift" style="width:50%" class="img-circle">
-                <div class="caption fonte">
-                  <p>Experiencia de mais de 2 anos com a linguagem de 'Swift' desenvolvida pela Apple.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail opa">
-              <a href="skills/Group 6.png" target="_blank">
-                <img src="skills/Group 6.png" alt="Java" style="width:50%" class="img-circle">
-                <div class="caption fonte">
-                  <p>Durante 1 semestre fui monitor em uma materia da faculdade que utilizava a linguagem. Possuo mais de um ano de estudo na faculdade de Ciencia da Computação referente a linguagem.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="thumbnail opa">
-              <a href="skills/Group 3.png" target="_blank">
-                <img src="skills/Group 3.png" alt="Node JS" style="width:50%" class="img-circle">
-                <div class="caption fonte">
-                  <p>Desenvolvimento do back-end de servidores em projetos praticos utilizando <abbr title="Interpretador de 'JavaScript' feito para rodar no lado servidor para aplicações web.">'NodeJS'</abbr>. Alem da criação de APIs utilizando a linguagem.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="thumbnail opa">
-              <a href="skills/webDesign.png" target="_blank">
-                <img src="skills/webDesign.png" alt="Web Design" style="width:50%" class="img-circle">
-                <div class="caption fonte">
-                  <p>Desenvolvimento de projetos praticos, incluindo esse site que esta vendo, utilizando 'HTML', 'CSS', 'JavaScript' e 'jQuery'pare deixar as aplicações web com um design mais agradavel ao usuario.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="thumbnail opa">
-              <a href="skills/Group.png" target="_blank">
-                <img src="skills/Group.png" alt="SQL" style="width:50%" class="img-circle">
-                <div class="caption fonte">
-                  <p>Estudo e desenvolvimento de projetos praticos durante 3 semestres durante a faculdade de Ciencia da Computação.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="thumbnail opa">
-              <a href="skills/Group 5.png" target="_blank">
-                <img src="skills/Group 5.png" alt="PHP" style="width:50%" class="img-circle">
-                <div class="caption fonte">
-                  <p>Estudo e desenvolvimento de projetos praticos durante 1 semestre na faculdade de Ciencia da Computação.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- <h1>My First Bootstrap Page</h1> -->
-      <!-- <p>This is some text.</p> -->
-      <br><br><br>
+      <h2>Typography</h2>
+      <p class="text-lowercase">Lowercased text.</p>
+      <p class="text-uppercase">Uppercased text.</p>
+      <p class="text-capitalize">Capitalized text.</p>
+      <h1>h1 heading <small>secondary text</small></h1>
+      <h2>h2 heading <small>secondary text</small></h2>
+      <h3>h3 heading <small>secondary text</small></h3>
+      <h4>h4 heading <small>secondary text</small></h4>
+      <h5>h5 heading <small>secondary text</small></h5>
+      <h6>h6 heading <small>secondary text</small></h6>
     </div>
 
-    <div id="home" class="parallax image3"></div>
-
-    <div id="portfolio" class="container-fluid" style="background-color:lightgray;">
-      <br><br><br>
-      <div class="container-fluid">
-        <h2>Portfólio</h2>
-        <!-- <p>Xxx yyy zzz.</p> -->
-        <div class="row">
-          <div class="col-md-4">
-            <div class="thumbnail opa">
-              <a href="https://itunes.apple.com/br/app/space-alive/id1262950036?mt=8" target="_blank">
-                <img src="portfolio/SpaceAlive/c.png" alt="Space Alive" style="width:100%">
-                <div class="caption fonte">
-                  <h3>Space Alive</h3>
-                  <p>Jogo recreativo desenvolvido sozinho em um mes no projeto 'Apple Developer Academy'.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail opa">
-              <a href="https://itunes.apple.com/br/app/livro-livre/id1249855041?mt=8" target="_blank">
-                <img src="portfolio/LivroLivre/a.png" alt="Livro Livre" style="width:100%">
-                <div class="caption fonte">
-                  <h3>Livro Livre</h3>
-                  <p>Aplicativo que funciona como uma rede social para troca de livros denvolvido em equipe durante 2 meses no projeto 'Apple Developer Academy'.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail opa">
-              <a href="https://itunes.apple.com/us/app/electrobot/id1322468191?mt=8&ign-mpt=uo%3D4" target="_blank">
-                <img src="portfolio/ElectroBot/b.png" alt="Electrobot" style="width:100%">
-                <div class="caption fonte">
-                  <h3>Electrobot</h3>
-                  <p>Jogo educacional desenvolvido em equipe durante 2 meses no projeto 'Apple Developer Academy'.</p>
-                </div>
-              </a>
-            </div>
-
-          </div>
-        </div>
+    <!-- BOUT TABLES -->
+    <div class="container">
+      <h2>Basic Table</h2>
+      <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container">
+      <h2>Striped Rows</h2>
+      <p>The .table-striped class adds zebra-stripes to a table:</p>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container">
+      <h2>Bordered Table</h2>
+      <p>The .table-bordered class adds borders to a table:</p>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container">
+      <h2>Hover Rows</h2>
+      <p>The .table-hover class enables a hover state on table rows:</p>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container">
+      <h2>Condensed Table</h2>
+      <p>The .table-condensed class makes a table more compact by cutting cell padding in half:</p>
+      <table class="table table-condensed">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container">
+      <h2>Contextual Classes</h2>
+      <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Default</td>
+            <td>Defaultson</td>
+            <td>def@somemail.com</td>
+          </tr>
+          <tr class="success">
+            <td>Success</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr class="danger">
+            <td>Danger</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr class="info">
+            <td>Info</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+          <tr class="warning">
+            <td>Warning</td>
+            <td>Refs</td>
+            <td>bo@example.com</td>
+          </tr>
+          <tr class="active">
+            <td>Active</td>
+            <td>Activeson</td>
+            <td>act@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container">
+      <h2>Table</h2>
+      <p>The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>
+      <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Anna</td>
+            <td>Pitt</td>
+            <td>35</td>
+            <td>New York</td>
+            <td>USA</td>
+          </tr>
+        </tbody>
+      </table>
       </div>
+    </div>
+    <!-- BOUT TABLES -->
+    <!-- Class	Description
+    .active	Applies the hover color to the table row or table cell
+    .success	Indicates a successful or positive action
+    .info	Indicates a neutral informative change or action
+    .warning	Indicates a warning that might need attention
+    .danger	Indicates a dangerous or potentially negative action -->
+
+    <img src="paris.jpg" class="img-rounded" alt="Paris">
+    <img src="paris.jpg" class="img-circle" alt="Paris">
+    <img src="paris.jpg" class="img-thumbnail" alt="Paris">
+    <img src="paris.jpg" class="img-responsive" alt="Paris">
+    <div class="container">
+      <h2>Image Gallery</h2>
+      <p>The .thumbnail class can be used to display an image gallery.</p>
+      <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+      <p>Click on the images to enlarge them.</p>
       <div class="row">
-        <div class="col-md-6">
-          <div class="thumbnail opa">
-            <a href="https://itunes.apple.com/app/id1286392692" target="_blank">
-              <img src="portfolio/Numberain/c.png" alt="Numberain" style="width:100%">
-              <div class="caption fonte">
-                <h3>Numberain</h3>
-                <p>Jogo educacional com objetivo de promover a pratica de contas de soma e subtração para crianças que estao aprendendo operações elementares. Esse jogo conta com um modo online em tempo real que permite que dois jogadores participem da mesma partida, dividindo a tela em duas metades iguais para visualizar cada um dos jogadores. Desenvolvido em equipe durante 2 meses no projeto 'Apple Developer Academy'.</p>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/lights.jpg" target="_blank">
+              <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+              <div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
               </div>
             </a>
           </div>
-
         </div>
-      </div>
-      <!-- <h1>My First Bootstrap Page</h1> -->
-      <!-- <p>This is some text.</p> -->
-      <br><br><br>
-    </div>
-
-    <div id="home" class="parallax image1"></div>
-
-    <div id="about" class="container-fluid" style="background-color:lightgray;">
-      <br><br><br>
-      <div class="container">
-        <h2>Sobre</h2>
-        <!-- <p>Xxx yyy zzz.</p> -->
-        <div class="row">
-          <div class="col-md-3">
-            <img src="Eu_Perfil.jpg" alt="Eu" class="img-circle" style="width:100%">
-          </div>
-          <div class="col-md-9">
-            <div class="thumbnail">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/nature.jpg" target="_blank">
+              <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
               <div class="caption">
-                <p>Estudante de <a href="http://up.mackenzie.br/graduacao/sao-paulo/ciencia-da-computacao/">Ciencia da Computação</a> na <a href="http://portal.mackenzie.br/">Universidade Presbiteriana Mackenzie</a> e muito entusiasmado pelo que faz.
-                 Desde pequeno sempre fui muito curioso em relação a tecnologias e buscava aprender como esses equipamentos funcionavam. Acabei absorvendo bastante conhecimento pesquisando sobre tecnologia e tambem participando de cursos relacionados a tecnologia durante a adolescência.</p>
-                 <p>Quando iniciei o curso de Ciencia da Computação eu me senti no lugar certo desde o inicio. Com a estrutura da Universidade Presbiteriana Mackenzie e os otimos professores que estou tendo contato, estou adorando poder estudar e me sinto muito bem preparado para o mercado de trabalho.</p>
-                 <p>Logo no primeiro semestre do curso eu fui aprovado na 'Apple Developer Academy', um projeto de 2 anos que esta me permitindo ter um desenvolvimento muito grande para o mercado de trabalho, com boas praticas, recursos e tecnologias que estão sendo usadas atualmente no mercado.</p>
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
               </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!-- <h1>My First Bootstrap Page</h1> -->
-      <!-- <p>This is some text.</p> -->
-      <br><br><br>
-    </div>
-
-    <div id="home" class="parallax image2"></div>
-
-    <div id="timeline" class="container-fluid" style="background-color:lightgray;">
-      <br><br><br>
-      <div class="container">
-        <h2>Timeline</h2>
-        <!-- <p>Xxx yyy zzz.</p> -->
-        <div class="row">
-          <div class="col-md-4">
-            <img src="timeline/apple.jpg" alt="Apple Developer Academy Team" class="img-thumbnail" style="width:100%">
-          </div>
-          <div class="col-md-8">
-            <div class="thumbnail" style="background-color:white;">
-              <div class="caption" style="background-color:lightgray;">
-                <h3>Apple Developer Academy</h3>
-                <h5> <span class="glyphicon glyphicon-time"></span> 18 aos 20 anos - 2017 a 2018</h5>
-                <p>No meu primeiro semestre da faculdade fui aprovado no projeto.</p>
-                <p>Esse projeto conta com uma estrutura perfeita para o aprendizado, estudo e desenvolvimento de aplicativos iOS.
-                Uma rotina intensa de desenvolvimento em equipe de novos apps de acordo com as guidelines da Apple e usando as melhores tecnologias para desenvolvimento.</p>
-                <p>Esse projeto capacita os alunos para serem desenvolvedore de aplicativos iOS seguindo as guidelines da Apple e seguindo as boas praticas para desenvolvimento.</p>
-                <p>Esse projeto capacita o aluno com treinamentos e praticas que são usadas atualmente no mercado de trabalho e permite que os alunos aproveitem ao maximo as capacidades criativas para desenvolver soluções inovadoras para os usuarios.</p>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
-
-      </div>
-      <!-- <h1>My First Bootstrap Page</h1> -->
-      <!-- <p>This is some text.</p> -->
-      <br><br><br>
-    </div>
-
-    <div id="home" class="parallax image2"></div>
-
-    <div id="contact" class="container-fluid" style="background-color:lightgray;">
-      <br><br><br>
-      <div class="container">
-        <h2>Contato</h2>
-
-        <div class="row">
-          <div class="col-md-3">
-            <img src="Eu_Perfil.jpg" alt="Eu" class="img-circle" style="width:100%">
-          </div>
-          <div class="col-md-9">
-            <div class="thumbnail" style="background-color:white">
-              <div class="caption text-center" style="background-color:lightgray">
-                <p>Email: joao.gbp@hotmail.com</p>
-                <p>Telefone: +55(11)9.9675-4193</p>
-                <button type="button" class="btn btn-primary">Facebook</button>
-                <button type="button" class="btn btn-primary">Instagram</button>
-                <button type="button" class="btn btn-primary">LinkedIn</button>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/fjords.jpg" target="_blank">
+              <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+              <div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
               </div>
-            </div>
+            </a>
           </div>
-
         </div>
       </div>
-      <br><br><br>
+    </div>
+    <div class="container">
+      <h2>Responsive Embed</h2>
+      <p>Create a responsive video and scale it nicely to the parent element with an 16:9 aspect ratio</p>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Responsive Embed</h2>
+      <p>Create a responsive video and scale it nicely to the parent element.</p>
+
+      <h2>Aspect ratio 4:3</h2>
+      <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+      </div>
+
+      <h2>Aspect ratio 16:9</h2>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+      </div>
     </div>
 
-    <!-- <div id="contact" class="container-fluid text-center" style="background-color:lightgray;">
-      <h1>Contato</h1>
-      <img src="EU_Perfil.jpg" class="img-circle" alt="Cinque Terre" style="width:10%;">
-      <br>
-      <p>Telefone: +55(11)9.9675-4193</p>
-      <button type="button" class="btn btn-primary">Facebook</button>
-      <button type="button" class="btn btn-primary">Instagram</button>
-      <button type="button" class="btn btn-primary">LinkedIn</button>
-      <br><br>
+    <div class="container-fluid" style="background-color:gray;">
+      <h1>My First Bootstrap Page</h1>
+      <p>This is some text.</p>
+    </div>
 
-      <br>
-    </div> -->
-    <div id="contact" class="container-fluid text-center" style="background-color:gray;">
-      <!-- <br> -->
-      <p class="text-center" style="margin-top:10px;color:white;font-weight: bold;font-size:20px">Site criado por João Gabriel.</p>
+    <div class="container" style="background-color:gray;">
+      <h1>My First Bootstrap Page</h1>
+      <p>This is some text.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+      <div class="col-sm-4" style="background-color:yellow;">.col-sm-4</div>
+      <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4" style="background-color:lightblue;">.col-sm-4</div>
+      <div class="col-sm-8" style="background-color:lightgreen;">.col-sm-8</div>
+    </div>
+
+    <div style="height:50%;background-color:red;font-size:36px">
+      Scroll Up and Down this page to see the parallax scrolling effect.
+      This div is just here to enable scrolling.
+      Tip: Try to remove the background-attachment property to remove the scrolling effect.
     </div>
 
   </body>
